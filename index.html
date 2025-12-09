@@ -1,0 +1,245 @@
+<html lang="zh-Hant"><head><style>.gm-control-active>img{-webkit-box-sizing:content-box;box-sizing:content-box;display:none;left:50%;pointer-events:none;position:absolute;top:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.gm-control-active>img:nth-child(1){display:block}.gm-control-active:focus>img:nth-child(1),.gm-control-active:hover>img:nth-child(1),.gm-control-active:active>img:nth-child(1),.gm-control-active:disabled>img:nth-child(1){display:none}.gm-control-active:focus>img:nth-child(2),.gm-control-active:hover>img:nth-child(2){display:block}.gm-control-active:active>img:nth-child(3){display:block}.gm-control-active:disabled>img:nth-child(4){display:block}sentinel{}
+</style><style>.LGLeeN-keyboard-shortcuts-view{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}.LGLeeN-keyboard-shortcuts-view table,.LGLeeN-keyboard-shortcuts-view tbody,.LGLeeN-keyboard-shortcuts-view td,.LGLeeN-keyboard-shortcuts-view tr{background:inherit;border:none;margin:0;padding:0}.LGLeeN-keyboard-shortcuts-view td{padding:0 5px}.LGLeeN-keyboard-shortcuts-view thead{display:none}.LGLeeN-keyboard-shortcuts-view kbd{background-color:#eee;border-radius:2px;border:1px solid #ccc;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 2px #fff inset;color:#888;display:inline-block;font-family:Arial,sans-serif;font-size:11px;line-height:1.4;margin:0 2px;padding:1px 2px;text-shadow:0 1px 0 #fff}.LGLeeN-keyboard-shortcuts-view .LGLeeN-disable-shortcuts{color:#999;cursor:pointer;display:block;float:right;padding:5px}sentinel{}
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>日本東京 - 2025 五日遊行程規劃</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<style>
+    /* 確保地圖容器有明確的高度 */
+    #map-container {
+        height: 600px; /* 您可以根據需要調整高度 */
+        width: 100%;
+    }
+    .trip-item:hover {
+        background-color: #f3f4f6;
+    }
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+<div class="container mx-auto p-6">
+    <header class="text-center mb-10">
+        <h1 class="text-4xl font-extrabold text-indigo-700">🇯🇵 日本東京 - 2025 五日遊行程規劃</h1>
+        <p class="text-gray-600 mt-2">使用 Google Maps API 互動式地圖</p>
+    </header>
+
+    <div id="map-container" class="rounded-lg shadow-xl overflow-hidden mb-10">
+        <div class="w-full h-full bg-gray-200" id="map" style="position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div></div></div></div>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow-xl">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b pb-2">📅 詳細行程</h2>
+        <div id="trip-list">
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-indigo-600 border-l-4 border-indigo-600 pl-3 mb-3">第 1 天：時尚與傳統的交會</h3>
+                <ul class="space-y-3">
+                    <li class="trip-item p-3 border rounded-lg cursor-pointer flex items-center justify-between" data-lat="35.6728" data-lng="139.7597" data-name="銀座 (Ginza)">
+                        <span class="font-medium text-gray-700">10:00 - 銀座 (Ginza)</span>
+                        <a href="https://maps.app.goo.gl/YourGinzaLink" target="_blank" class="text-sm text-indigo-500 hover:text-indigo-700">地圖連結</a>
+                    </li>
+                    <li class="trip-item p-3 border rounded-lg cursor-pointer flex items-center justify-between" data-lat="35.6698" data-lng="139.7014" data-name="澀谷 (Shibuya) - 交叉路口">
+                        <span class="font-medium text-gray-700">14:00 - 澀谷 (Shibuya) - 交叉路口</span>
+                        <a href="https://maps.app.goo.gl/YourShibuyaLink" target="_blank" class="text-sm text-indigo-500 hover:text-indigo-700">地圖連結</a>
+                    </li>
+                    <li class="trip-item p-3 border rounded-lg cursor-pointer flex items-center justify-between" data-lat="35.6591" data-lng="139.7456" data-name="東京鐵塔 (Tokyo Tower)">
+                        <span class="font-medium text-gray-700">19:00 - 東京鐵塔 (Tokyo Tower)</span>
+                        <a href="https://maps.app.goo.gl/YourTowerLink" target="_blank" class="text-sm text-indigo-500 hover:text-indigo-700">地圖連結</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-indigo-600 border-l-4 border-indigo-600 pl-3 mb-3">第 2 天：次文化與古著</h3>
+                <ul class="space-y-3">
+                    <li class="trip-item p-3 border rounded-lg cursor-pointer flex items-center justify-between" data-lat="35.6703" data-lng="139.7043" data-name="原宿竹下通 (Harajuku)">
+                        <span class="font-medium text-gray-700">11:00 - 原宿竹下通 (Harajuku)</span>
+                        <a href="https://maps.app.goo.gl/YourHarajukuLink" target="_blank" class="text-sm text-indigo-500 hover:text-indigo-700">地圖連結</a>
+                    </li>
+                    <li class="trip-item p-3 border rounded-lg cursor-pointer flex items-center justify-between" data-lat="35.6606" data-lng="139.6669" data-name="下北澤 (Shimokitazawa)">
+                        <span class="font-medium text-gray-700">15:00 - 下北澤 (Shimokitazawa)</span>
+                        <a href="https://maps.app.goo.gl/YourShimoLink" target="_blank" class="text-sm text-indigo-500 hover:text-indigo-700">地圖連結</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-indigo-600 border-l-4 border-indigo-600 pl-3 mb-3">第 3 天：箱根溫泉之旅 (戶外)</h3>
+                <ul class="space-y-3">
+                    <li class="trip-item p-3 border rounded-lg cursor-pointer flex items-center justify-between" data-lat="35.2346" data-lng="139.0347" data-name="箱根湯本 (Hakone-Yumoto)">
+                        <span class="font-medium text-gray-700">10:00 - 箱根湯本 (Hakone-Yumoto)</span>
+                        <a href="https://maps.app.goo.gl/YourHakoneLink" target="_blank" class="text-sm text-indigo-500 hover:text-indigo-700">地圖連結</a>
+                    </li>
+                    <li class="trip-item p-3 border rounded-lg cursor-pointer flex items-center justify-between" data-lat="35.2444" data-lng="139.0186" data-name="蘆之湖 (Ashinoko Lake)">
+                        <span class="font-medium text-gray-700">15:00 - 蘆之湖 (Ashinoko Lake)</span>
+                        <a href="https://maps.app.goo.gl/YourAshinokoLink" target="_blank" class="text-sm text-indigo-500 hover:text-indigo-700">地圖連結</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-indigo-600 border-l-4 border-indigo-600 pl-3 mb-3">第 4 天：富士山與河口湖</h3>
+                <ul class="space-y-3">
+                    <li class="trip-item p-3 border rounded-lg cursor-pointer flex items-center justify-between" data-lat="35.5303" data-lng="138.7490" data-name="富士山五合目 (Mt Fuji 5th Station)">
+                        <span class="font-medium text-gray-700">09:00 - 富士山五合目 (Mt Fuji 5th Station)</span>
+                        <a href="https://maps.app.goo.gl/YourFujiLink" target="_blank" class="text-sm text-indigo-500 hover:text-indigo-700">地圖連結</a>
+                    </li>
+                    <li class="trip-item p-3 border rounded-lg cursor-pointer flex items-center justify-between" data-lat="35.5138" data-lng="138.7663" data-name="河口湖 (Kawaguchiko)">
+                        <span class="font-medium text-gray-700">14:00 - 河口湖 (Kawaguchiko)</span>
+                        <a href="https://maps.app.goo.gl/YourKawaLink" target="_blank" class="text-sm text-indigo-500 hover:text-indigo-700">地圖連結</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-indigo-600 border-l-4 border-indigo-600 pl-3 mb-3">第 5 天：上野與回程</h3>
+                <ul class="space-y-3">
+                    <li class="trip-item p-3 border rounded-lg cursor-pointer flex items-center justify-between" data-lat="35.7149" data-lng="139.7735" data-name="上野公園 (Ueno Park) &lt;br&gt; 東京國立博物館">
+                        <span class="font-medium text-gray-700">10:00 - 上野公園 (Ueno Park)</span>
+                        <a href="https://maps.app.goo.gl/YourUenoLink" target="_blank" class="text-sm text-indigo-500 hover:text-indigo-700">地圖連結</a>
+                    </li>
+                    <li class="trip-item p-3 border rounded-lg cursor-pointer flex items-center justify-between" data-lat="35.6811" data-lng="139.7670" data-name="東京車站 (Tokyo Station)">
+                        <span class="font-medium text-gray-700">14:00 - 東京車站 (Tokyo Station)</span>
+                        <a href="https://maps.app.goo.gl/YourStationLink" target="_blank" class="text-sm text-indigo-500 hover:text-indigo-700">地圖連結</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-10 p-6 bg-gray-100 rounded-lg shadow-inner">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">輸出與操作</h2>
+        <div class="flex space-x-4 mb-4">
+            <button onclick="exportJson()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-150">
+                生成 JSON 資料
+            </button>
+            <button onclick="copyJson()" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-150">
+                複製 JSON
+            </button>
+        </div>
+        <textarea id="json-output" class="w-full h-40 p-3 border border-gray-300 rounded-lg bg-white font-mono text-sm" readonly="">點擊上方按鈕生成 JSON</textarea>
+        
+        <button onclick="downloadHtml()" class="mt-4 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded transition duration-150">
+            下載此 HTML 檔案
+        </button>
+    </div>
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?libraries=maps&amp;key=__YOUR_GOOGLE_MAPS_API_KEY__&amp;v=weekly&amp;callback=google.maps.__ib__"></script>
+
+<script>
+    let map;
+    let markers = [];
+
+    // 初始化地圖
+    function initMap() {
+        // 設定東京為中心點
+        const tokyo = { lat: 35.6895, lng: 139.6917 };
+        map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 10,
+            center: tokyo,
+            fullscreenControl: false,
+            mapTypeControl: true,
+        });
+
+        // 載入行程標記
+        loadMarkers();
+    }
+
+    // 載入所有行程標記
+    function loadMarkers() {
+        const tripItems = document.querySelectorAll('.trip-item');
+        
+        tripItems.forEach(item => {
+            const lat = parseFloat(item.getAttribute('data-lat'));
+            const lng = parseFloat(item.getAttribute('data-lng'));
+            const name = item.getAttribute('data-name');
+            
+            const position = { lat: lat, lng: lng };
+
+            const marker = new google.maps.Marker({
+                position: position,
+                map: map,
+                title: name,
+            });
+
+            const infowindow = new google.maps.InfoWindow({
+                content: `<div class="font-semibold">${name}</div><a href="${item.querySelector('a').href}" target="_blank" class="text-xs text-blue-600 hover:underline">查看地圖</a>`
+            });
+
+            marker.addListener('click', () => {
+                // 關閉所有其他資訊視窗
+                markers.forEach(m => m.infowindow.close());
+                infowindow.open({
+                    anchor: marker,
+                    map,
+                });
+            });
+
+            markers.push({ marker, infowindow });
+
+            // 為列表項添加點擊事件，點擊後地圖中心移到該位置
+            item.addEventListener('click', () => {
+                map.panTo(position);
+                map.setZoom(14); // 放大以便查看
+                infowindow.open({
+                    anchor: marker,
+                    map,
+                });
+            });
+        });
+    }
+
+    // 呼叫 initMap 函數來開始地圖初始化過程（這必須在 Google Maps API 載入後運行）
+    // 因為 API 腳本已經包含 callback=google.maps.__ib__，我們在 window 上掛載 initMap
+    window.google.maps.__ib__ = initMap; 
+    
+    // JSON 匯出功能
+    window.exportJson = function() {
+        const tripItems = document.querySelectorAll('.trip-item');
+        const exportData = {
+            title: "日本東京 - 2025 五日遊行程規劃",
+            days: []
+        };
+        
+        // 簡單地將所有項目分組
+        let currentDay = 0;
+        document.querySelectorAll('div.mb-6').forEach((dayBlock, index) => {
+            currentDay = index + 1;
+            exportData.days.push({
+                day: currentDay,
+                title: dayBlock.querySelector('h3').textContent,
+                locations: Array.from(dayBlock.querySelectorAll('li.trip-item')).map(s => ({
+                    time_activity: s.querySelector('span').textContent,
+                    name: s.getAttribute('data-name').replace('<br>', ' '),
+                    lat: parseFloat(s.getAttribute('data-lat')),
+                    lng: parseFloat(s.getAttribute('data-lng')),
+                    link: s.querySelector('a').href
+                }))
+            })
+        });
+
+        document.getElementById('json-output').textContent = JSON.stringify(exportData, null, 2);
+    }
+
+    window.copyJson = function() {
+        const text = document.getElementById('json-output').textContent;
+        navigator.clipboard.writeText(text).then(() => {
+            alert('JSON 已複製到剪貼簿');
+        });
+    }
+
+    // 下載自身 HTML 檔案
+    window.downloadHtml = function() {
+        const htmlContent = document.documentElement.outerHTML;
+        const blob = new Blob([htmlContent], { type: 'text/html' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'tokyo_trip_2025_fixed.html';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+</script>
+
+
+
+</body></html>
